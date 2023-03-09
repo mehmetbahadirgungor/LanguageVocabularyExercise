@@ -4,15 +4,15 @@ from dictionary import dictionary
 class App:
     
     def __init__(self):
-        print(" Menü ".center(50,"*"))
-        self.chosen = int(input("1- Do exercise\n2- Çıkış\nSeçim: "))
+        print(" Menu ".center(50,"*"))
+        self.chosen = int(input("1- Do exercise\n2- Quit\nChoice: "))
         while True:
             if self.chosen == 1:
                 self.doExercise()
             elif self.chosen == 2:
                 quit()
             else:
-                print("Hatalı seçim yaptınız tekrar deneyiniz.")
+                print("You made the wrong choice, please try again.")
                 continue
 
     def doExercise(self):
